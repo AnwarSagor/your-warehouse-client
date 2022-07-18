@@ -11,3 +11,11 @@
     margin-top: 15px;
     padding-top: 10px;
 }
+
+.navbar {
+    background-color: lightgray;
+}
+
+.title {
+    text-shadow: black;
+}

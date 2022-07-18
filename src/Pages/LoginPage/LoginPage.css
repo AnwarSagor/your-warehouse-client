@@ -1,0 +1,14 @@
+.sign-in-form {
+    margin-bottom: 80px;
+}
+
+.sign-in-title {
+    color: gray;
+}
+
+.sign-in-btn {
+    width: 350px;
+    background-color: gray;
+    color: aliceblue;
+    padding: 10px;
+}
