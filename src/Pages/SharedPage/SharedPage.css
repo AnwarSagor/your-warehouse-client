@@ -1,3 +1,13 @@
+/* Header */
+.navbar {
+    background-color: lightgray;
+}
+
+.title {
+    text-shadow: black;
+}
+
+/* Footer */
 .footer {
     background-color: black;
     color: aliceblue;
@@ -12,10 +22,8 @@
     padding-top: 10px;
 }
 
-.navbar {
-    background-color: lightgray;
-}
-
-.title {
-    text-shadow: black;
+/* NotFound */
+.not-found {
+    margin: 20px;
+    text-align: center;
 }
