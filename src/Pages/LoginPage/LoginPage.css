@@ -1,3 +1,5 @@
+/* SigIn */
+
 .sign-in-form {
     margin-bottom: 80px;
 }
@@ -7,6 +9,56 @@
 }
 
 .sign-in-btn {
+    width: 350px;
+    background-color: gray;
+    color: aliceblue;
+    padding: 10px;
+}
+
+/* SignUp */
+
+.sign-up-title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sign-up-btn {
+    width: 350px;
+    background-color: gray;
+    color: aliceblue;
+    margin-top: 10px;
+
+}
+
+.register-form {
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 80px;
+}
+
+.register-form input:not([type=checkbox]) {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+label span {
+    text-align: center;
+}
+
+/* SocailLogin */
+
+div button img {
+    height: 30px;
+    width: 30px;
+}
+
+.social-login-btn {
     width: 350px;
     background-color: gray;
     color: aliceblue;
