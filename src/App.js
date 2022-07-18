@@ -18,7 +18,6 @@ import NotFound from "./Pages/SharedPage/NotFound";
 function App() {
   return (
     <div>
-      <h1>components created</h1>
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
