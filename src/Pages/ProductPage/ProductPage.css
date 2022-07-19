@@ -47,19 +47,32 @@ div img {
 
 .update-btn {
     background-color: gray;
+    color: aliceblue;
     border: 0ch;
     border-radius: 5px;
     padding: 5px;
-    color: aliceblue;
 }
 
 /* ProductDetail */
-.checkout-btn {
-    width: 350px;
+#product-detail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-top: -60px;
+}
+
+#product-image img {
+    margin: auto;
+    margin-bottom: -50px;
+    width: 70%;
+}
+
+#delivered-btn {
     background-color: gray;
     color: aliceblue;
-    margin-top: 10px;
-    padding: 10px;
-    border: none;
     border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    margin-bottom: 80px;
 }

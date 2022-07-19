@@ -24,20 +24,24 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="products" element={<Products></Products>}></Route>
-        <Route path="/product/:productId" element={<ProductDetail></ProductDetail>}></Route>
+
+        <Route path="/product/:productId" element={
+          <RequireAuth>
+            <ProductDetail></ProductDetail>
+          </RequireAuth>}></Route>
+
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/signIn" element={<SignIn></SignIn>}></Route>
         <Route path="/signUp" element={<SignUp></SignUp>}></Route>
 
-        <Route path="/productCheckout" element={
+        <Route path="/addProducts" element={
           <RequireAuth>
-            <ProductCheckout></ProductCheckout>
+            <AddProducts></AddProducts>
           </RequireAuth>}></Route>
 
         <Route path="/manageProducts" element={<ManageProducts></ManageProducts>}></Route>
         <Route path="/myProducts" element={<MyProducts></MyProducts>}></Route>
-        <Route path="/addProducts" element={<AddProducts></AddProducts>}></Route>
 
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
