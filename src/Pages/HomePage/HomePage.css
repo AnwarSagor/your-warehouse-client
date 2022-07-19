@@ -1,3 +1,14 @@
 .banner-img img {
     height: 400px;
 }
+
+.see-all-products {
+    background-color: lightgray;
+    border-radius: 5px;
+    display: flex;
+    margin: auto;
+    margin-top: -85px;
+    margin-bottom: 85px;
+    padding: 5px 15px;
+    border: none;
+}

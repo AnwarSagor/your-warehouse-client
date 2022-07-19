@@ -17,9 +17,14 @@ const ProductDetail = () => {
 
 
     return (
-        <div className='text-center'>
-            <h2 className='text-center'>Detail about product: {product.name}</h2>
+        <div >
+            <div class='product' className='text-center'>
+                <img className='w-50' src={product.img} alt="" />
+                <h4> {product.name}</h4>
+                <p>{product.price}</p>
+                <p class='description' className='text-center'>{product.description}</p>
 
+            </div>
             <div className='text-center'>
                 <Link to="/productCheckout">
                     <button className='checkout-btn'>Proceed Checkout</button>

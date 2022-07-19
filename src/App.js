@@ -10,6 +10,7 @@ import ManageProducts from "./Pages/ProductPage/ManageProducts";
 import MyProducts from "./Pages/ProductPage/MyProducts";
 import ProductCheckout from "./Pages/ProductPage/ProductCheckout";
 import ProductDetail from "./Pages/ProductPage/ProductDetail";
+import Products from "./Pages/ProductPage/Products";
 import Footer from "./Pages/SharedPage/Footer";
 import Header from "./Pages/SharedPage/Header";
 import NotFound from "./Pages/SharedPage/NotFound";
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
+        <Route path="products" element={<Products></Products>}></Route>
         <Route path="/product/:productId" element={<ProductDetail></ProductDetail>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/about" element={<About></About>}></Route>
