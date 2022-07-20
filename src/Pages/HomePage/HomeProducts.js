@@ -21,7 +21,7 @@ const HomeProducts = () => {
             <div class='products-container'>
 
                 {
-                    products.slice(0, 3).map(product =>
+                    products.slice(0, 6).map(product =>
                         <HomeProduct
                             key={product._id}
                             product={product}
@@ -30,7 +30,7 @@ const HomeProducts = () => {
 
             </div>
             <div >
-                <button class='see-all-products' onClick={() => navigate("/products")}>See All Products</button>
+                <button class='manage-products' onClick={() => navigate("/manageProducts")}>Manage Products</button>
             </div>
         </div>
     );

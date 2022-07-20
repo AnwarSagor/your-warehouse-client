@@ -72,6 +72,18 @@ div img {
     color: aliceblue;
     border-radius: 5px;
     margin-top: 10px;
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    margin-bottom: 80px;
+}
+
+#manage-btn {
+    background-color: gray;
+    color: aliceblue;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 5px;
     padding: 5px 10px;
     border: none;
     margin-bottom: 80px;

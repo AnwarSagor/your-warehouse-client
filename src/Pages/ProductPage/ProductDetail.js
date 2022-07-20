@@ -1,10 +1,11 @@
 import './ProductPage.css';
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const ProductDetail = () => {
     const { productId } = useParams();
     const [product, setProduct] = useState({});
+    const navigate = useNavigate();
 
     useEffect(() => {
         // const url = "products.json";
@@ -24,7 +25,10 @@ const ProductDetail = () => {
                 <p>{product.price}</p>
                 <p>Quantity: {product.quantity} <br /> Supplier name: {product.supplier}</p>
                 <p class='description' className='text-center'><small>{product.description}</small></p>
-                <button className='text-center' id='delivered-btn'>Delivered</button>
+                <div>
+                    <button id='delivered-btn'>Delivered</button>
+                    <button id='manage-btn' onClick={() => navigate("/manageProducts")}>Manage Products</button>
+                </div>
             </div>
             <div>
 
