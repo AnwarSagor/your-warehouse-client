@@ -8,6 +8,7 @@ import SocialLogin from './SocialLogin';
 
 const SignUp = () => {
     const [agree, setAgree] = useState(false);
+    const [passwordError, setPasswordError] = useState('')
 
     const [
         createUserWithEmailAndPassword,
@@ -36,9 +37,15 @@ const SignUp = () => {
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
-        // const agree = event.target.terms.checked;
+        const confirmPassword = event.target.confirmPassword.value;
+        const agree = event.target.terms.checked;
 
-        await createUserWithEmailAndPassword(email, password);
+        if (password !== confirmPassword) {
+            setPasswordError('Passwords do not match')
+            return;
+        };
+
+        await createUserWithEmailAndPassword(email, password, confirmPassword);
         await updateProfile({ displayName: name });
         navigate('/home');
 
@@ -46,13 +53,16 @@ const SignUp = () => {
 
     return (
         <div className='register-form'>
-            <h2 className='sign-up-title'>Please Sign-up</h2>
+            <h2 class='sign-up-title'>Please Sign-up</h2>
             <form onSubmit={handleSignUp}>
                 <input type="text" name="name" id="" placeholder='Your Name' />
                 <input type="email" name="email" id="" placeholder='Email Address' required />
-                <input type="password" name="password" id="" placeholder='Password' required />
+                <input type="password" name="password" id="password" placeholder='Password' required />
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder='Confirm Password' required />
                 <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
                 <label className={`ps-2 ${agree ? '' : 'text-danger'}`} htmlFor="terms">Accept the  Terms and Conditions of Your Warehouse</label>
+                <p className='text-danger'>{passwordError}</p>
+
                 <input
                     disabled={!agree}
                     className='sign-up-btn w-50 mx-auto'
