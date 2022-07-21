@@ -1,0 +1,12 @@
+#blogs-container {
+    margin-bottom: 80px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+#blogs-container p {
+    border: 5px solid grey;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: lightgray;
+}
