@@ -8,7 +8,13 @@ This is an inventory management system website. You can manage your product item
 
 #### `Website's different features and functionality:`
 
-* 
+* Created a Navbar containing the pages named 'Home', 'Products', 'Blog' and 'About'.
+* Showing Add Products, Manage Products, My Products in Navbar if the user is logged in,
+* Showing 6 products in 'Home' page and all the products in 'Products' and 'Manage Products' pages.
+* Showing products' image in ''Products' and 'Manage Products' pages.
+* Created a 404 page showing ....not found.
+* Created a 'Add Products' page by which you can add new product item in your inventory system.
+* Delivery button results in decrease your product quantity and Restock button results in increase your products' quantity.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
