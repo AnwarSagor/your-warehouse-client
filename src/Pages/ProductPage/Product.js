@@ -14,10 +14,11 @@ const Product = ({ product }) => {
         <div class='product'>
             <img className='w-100' src={img} alt="" />
             <h4> {name}</h4>
-            <p>{price}</p>
+            <p>Starting from ${price}</p>
             <p>Quantity: {quantity} <br /> Supplier name: {supplier}</p>
             <p class='description'><small>{description}</small></p>
             <button onClick={() => navigateToProductDetail(_id)} class='update-btn'>Update: {name}</button>
+
         </div>
     );
 };

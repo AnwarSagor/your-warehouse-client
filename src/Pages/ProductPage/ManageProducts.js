@@ -7,7 +7,7 @@ const ManageProducts = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure to delete?');
         if (proceed) {
-            const url = `http://localhost:5000/product/${id}`;
+            const url = `https://infinite-badlands-56898.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -20,12 +20,23 @@ const ManageProducts = () => {
         }
     }
     return (
-        <div className='container w-50 mx-auto'>
-            <h2>Manage Your Products</h2>
+        <div id='manage-products' className='container'>
+            <h2 className='text-center'>Manage Your Products</h2>
             {
-                products.map(product => <div key={product._id}>
-                    <p>{product.name} <button onClick={() => handleDelete(product._id)}>Delete</button></p>
-                </div>)
+                products.map(product =>
+                    <div id='manageProducts-container' key={product._id}>
+                        <div>
+                            <img src={product.img} alt="" />
+                        </div>
+                        <div className='text-center'>
+                            <h5>{product.name} </h5>
+                            <h6>{product.description}</h6>
+                        </div>
+
+                        <div >
+                            <button id='delete-button' onClick={() => handleDelete(product._id)}>Delete</button>
+                        </div>
+                    </div>)
             }
         </div>
     );

@@ -1,5 +1,16 @@
 # Getting Started with Create React App
 
+## `Website Name:` Your Warehouse
+### `Website Link:` https://your-warehouse.web.app/
+
+#### `Short Description:`
+This is an inventory management system website. You can manage your product items in different way. you can manage your product items by delivery, restock etc. Not only that, just give a look to your website to know how many products are sold and how many products are available to you. However, go through the website and explore it. Thanks to stay with us.
+
+#### `Website's different features and functionality:`
+
+* 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

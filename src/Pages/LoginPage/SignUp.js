@@ -52,7 +52,7 @@ const SignUp = () => {
     }
 
     return (
-        <div className='register-form'>
+        <div className='container register-form'>
             <h2 class='sign-up-title'>Please Sign-up</h2>
             <form onSubmit={handleSignUp}>
                 <input type="text" name="name" id="" placeholder='Your Name' />
@@ -65,7 +65,7 @@ const SignUp = () => {
 
                 <input
                     disabled={!agree}
-                    className='sign-up-btn w-50 mx-auto'
+                    id='sign-up-btn'
                     type="submit"
                     value="Sign-up" />
             </form>
@@ -73,6 +73,7 @@ const SignUp = () => {
 
             <SocialLogin></SocialLogin>
         </div>
+
     );
 };
 

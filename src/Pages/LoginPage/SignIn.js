@@ -60,7 +60,7 @@ const SignIn = () => {
     }
 
     return (
-        <div className='sign-in-form container w-50 mx-auto'>
+        <div className='container sign-in-form'>
             <h2 className='sign-in-title text-center mt-2'>Please Sign-in</h2>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">

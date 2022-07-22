@@ -2,6 +2,7 @@
 
 .sign-in-form {
     margin-bottom: 80px;
+    width: 50%;
 }
 
 .sign-in-title {
@@ -9,31 +10,53 @@
 }
 
 .sign-in-btn {
-    width: 350px;
+    width: 50%;
     background-color: gray;
     color: aliceblue;
     padding: 10px;
 }
 
+@media only screen and (max-width: 992px) {
+    .sign-in-form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .sign-in-btn {
+        width: 70%;
+    }
+}
+
 /* SignUp */
+.register-form {
+    width: 50%;
+    margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 992px) {
+    .register-form {
+        width: 100%;
+    }
+}
 
 .sign-up-title {
     text-align: center;
     margin-top: 20px;
 }
 
-.sign-up-btn {
-    width: 350px;
+#sign-up-btn {
+    width: 50%;
+    margin: auto;
     background-color: gray;
     color: aliceblue;
-    margin-top: 10px;
-
+    padding: 10px;
 }
 
-.register-form {
-    margin: 0 auto;
-    width: 50%;
-    margin-bottom: 80px;
+@media only screen and (max-width: 992px) {
+    #sign-up-btn {
+        width: 70%;
+    }
 }
 
 .register-form input:not([type=checkbox]) {
@@ -59,10 +82,16 @@ div button img {
 }
 
 .social-login-btn {
-    width: 350px;
+    width: 50%;
     background-color: gray;
     color: aliceblue;
     padding: 10px;
+}
+
+@media only screen and (max-width: 992px) {
+    .social-login-btn {
+        width: 70%;
+    }
 }
 
 /*  */

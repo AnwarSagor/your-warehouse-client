@@ -11,6 +11,7 @@ import MyProducts from "./Pages/ProductPage/MyProducts";
 import ProductCheckout from "./Pages/ProductPage/ProductCheckout";
 import ProductDetail from "./Pages/ProductPage/ProductDetail";
 import Products from "./Pages/ProductPage/Products";
+import RestockProducts from "./Pages/ProductPage/RestockProducts";
 import Footer from "./Pages/SharedPage/Footer";
 import Header from "./Pages/SharedPage/Header";
 import NotFound from "./Pages/SharedPage/NotFound";
@@ -28,6 +29,7 @@ function App() {
         <Route path="/product/:productId" element={
           <RequireAuth>
             <ProductDetail></ProductDetail>
+            {/* <RestockProducts></RestockProducts> */}
           </RequireAuth>}></Route>
 
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>

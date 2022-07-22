@@ -9,7 +9,7 @@ const ProductDetail = () => {
 
     useEffect(() => {
         // const url = "products.json";
-        const url = `http://localhost:5000/product/${productId}`;
+        const url = `https://infinite-badlands-56898.herokuapp.com/product/${productId}`;
 
         fetch(url)
             .then(res => res.json())
@@ -19,10 +19,12 @@ const ProductDetail = () => {
     return (
         <div className='container' id='product-detail'>
             <div class='product' className='text-center'>
-                <div id='product-image'><img src={product.img} alt="" /></div>
+                <div id='product-image'>
+                    <img src={product.img} alt="" />
+                </div>
                 <h4> {product.name}</h4>
                 <p><small>Product ID: {product._id}</small></p>
-                <p>{product.price}</p>
+                <p> Price starts from ${product.price}</p>
                 <p>Quantity: {product.quantity} <br /> Supplier name: {product.supplier}</p>
                 <p class='description' className='text-center'><small>{product.description}</small></p>
                 <div>
@@ -30,9 +32,7 @@ const ProductDetail = () => {
                     <button id='manage-btn' onClick={() => navigate("/manageProducts")}>Manage Products</button>
                 </div>
             </div>
-            <div>
 
-            </div>
         </div>
     );
 };
